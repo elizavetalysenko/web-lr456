@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objects and classes task</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/app.css">
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="true"/>
+	</head>
+    <style>
+        body {
+            overflow: auto;
+        }
+    </style>
+	<body>
+        <div class="header">
+			<p>Лабораторна робота №4-6</p>
+            <p>TР-13 Лисенко Єлизавета Олександрівна</p> 
+			<p>Завдання: Стилі CSS.</p>
+        </div>
+		<div class="wrapper">
+				<div class="tasks" id="task231">
+                    <h3>Завдання 2.3.1 Створити об’єкт «Користувач» з властивостями «Прізвище», «Ім’я». </h3>
+                    <label class="labels">
+                        Введіть ім'я
+                        <input type="text" id="user-name">
+                    </label>
+                    <label class="labels">
+                        Введіть прізвище
+                        <input type="text" id="user-surname">
+                    </label>
+                    <button class="button" onclick="task231()">Показати об'єкт</button>
+                    <div id="result"></div>
+                </div>
+
+                <div class="tasks" id="task232">
+                    <h3>Завдання 2.3.2 Створити об’єкт «Студент», що містить властивості «Спеціальність», «Група» і методи: додати, змінити, видалити дані. </h3>
+                    <label class="labels">
+                        Введіть спеціальність
+                        <input type="text" id="student-speciality">
+                    </label>
+                    <label class="labels">
+                        Введіть групу
+                        <input type="text" id="student-group">
+                    </label>
+                    <button class="button" onclick="task232()">Показати/Редагувати об'єкт</button>
+                    <button class="button" id="deleteButton">Видалити данні об'єкта</button>
+                    <div id="result"></div>
+                </div>
+
+                <div class="tasks" id="task233">
+                    <h3>
+                        Завдання 2.3.3 Реалізувати копіювання властивостей і методів об’єктів «Користувач» і «Студент». 
+                    </h3>
+                    <button class="button" onclick="task233()">Копіювати властивості об'єктів</button>
+                    <div id="result"></div>
+                </div>
+
+                <div class="tasks" id="task234">
+                    <h3>
+                        Завдання 2.3.4 Додати в прототип об’єкту «Студент» метод «Показати дані». 
+                    </h3>
+                    <button class="button" onclick="task234()">Показати данні</button>
+                    <div id="result"></div>
+                </div>
+
+                <div class="tasks" id="task235">
+                    <h3>
+                        Завдання 2.3.5 Створити об’єкт «Успішність», що наслідує властивості і методи об’єкту «Студент» і має додаткові властивості «Тест», «Спроба», «Бали» і метод «Розрахунок середнього балу» (за декілька спроб). Перевизначити в об’єкті «Успішність» метод «Показати дані». 
+                    </h3>
+                    <label class="labels">
+                        Введіть назву тесту
+                        <input type="text" id="test">
+                    </label>
+                    <label class="labels">
+                        Введіть суму балів
+                        <input type="text" id="score">
+                    </label>
+                    <label class="labels">
+                        Введіть кількість спроб
+                        <input type="text" id="attempts">
+                    </label>
+                    <button class="button" onclick="task235()">Показати данні</button>
+                    <div id="result"></div>
+                </div>
+
+                <div class="tasks" id="task236">
+                    <h3>
+                        Завдання 2.3.6 Реалізувати класи «Студент» і «Успішність» з такими же методами і властивостями як і попередні об’єкти. «Успішність» наслідує методи та властивості від «Студент». При реалізації використовувати геттери і сеттери, наприклад, для перевірки даних чи виведення в різних виглядах інформацію.
+                    </h3>
+                    <button class="button" onclick="task236()">Показати данні</button>
+                    <div id="result"></div>
+                </div>
+		</div>
+		<script type="application/javascript" src="./src/objectsTask.js"></script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/app.css">
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="true"/>
+	</head>
+	<body>
+        <div class="header">
+			<p>Лабораторна робота №4-6</p>
+            <p>TР-13 Лисенко Єлизавета Олександрівна</p> 
+			<p>Завдання: Стилі CSS.</p>
+        </div>
+		<div class="wrapper">
+			<main class="main">
+				<form id="quiz" action="/asd">
+					<div id="registration">
+						<h3>Fill the form</h3>
+						<input type="text" id="name" onkeydown="if(event.keyCode==13){return false;}" placeholder="Name">
+						<input type="text" id="group"  onkeydown="if(event.keyCode==13){return false;}" placeholder="Group">
+						<input type="button" class="enter" id="enter" value="Enter">
+					</div>
+					<div id="quizDiv">
+						<div id="questions">
+						</div>
+						<div class="quiz__nav" id="nav">
+							<button type="button" class="button" id="prev" style="display:none;">Previous</button>
+							<button type="button" class="button" id="next">Next</button>
+							<button type="submit" class="button" id="submit" style="display:none;">Submit</button>
+						</div>
+						<div class="quiz__footer">
+							<div class="footer__content" id="pages">0 / 0</div>
+						</div>
+					</div>
+				</form>
+
+			</main>
+		</div>
+		<script type="module" src="./src/app.js"></script>
+	</body>
+</html>
