@@ -1,6 +1,6 @@
 {
     "app": {
-        "apiKey": "5624306339:AAF-trMhdzm9WopA4rqFmbCuHUmg87flsEg",
+        "apiKey": "bottoken",
         "hostname": "127.0.0.1",
         "port": 3000,
         "chatId": 463113011
